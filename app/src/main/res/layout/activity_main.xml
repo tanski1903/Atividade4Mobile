@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/edTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sistema de Compras"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:textSize="25dp"/>
+
+    <CheckBox
+        android:id="@+id/cbItem1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Arroz (R$ 2,69)"
+        android:layout_below="@id/edTitulo"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"/>
+
+    <CheckBox
+        android:id="@+id/cbItem2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Leite (R$ 5.00)"
+        android:layout_below="@id/cbItem1"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"/>
+
+    <CheckBox
+        android:id="@+id/cbItem3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Carne (R$ 9,70)"
+        android:layout_below="@id/cbItem2"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"/>
+
+    <CheckBox
+        android:id="@+id/cbItem4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Feijão (R$ 2,70)"
+        android:layout_below="@id/cbItem3"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"/>
+
+    <Button
+        android:id="@+id/btTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total das Compras"
+        android:layout_below="@id/cbItem4"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"/>
+</RelativeLayout>
